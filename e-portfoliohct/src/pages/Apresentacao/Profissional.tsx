@@ -284,10 +284,32 @@ const Profissional: React.FC = () => {
 
                             <span className="responsibilities-header">Responsabilidades & Conquistas</span>
                             <ul className="responsibilities-list">
-                               <li>Conceção, desenvolvimento e gestão de websites institucionais e plataformas de e-commerce de alto desempenho, utilizando nativamente WordPress (WooCommerce) e Shopify.</li>
-<li>Personalização avançada de temas e integração de plugins/apps para expansão de funcionalidades, garantindo interfaces responsivas e uma experiência de navegação (UX) fluida e intuitiva.</li>
-<li>Administração contínua do *backoffice*, incluindo a gestão estruturada de catálogos de produtos, controlo de inventário, processamento de encomendas e automação de e-mails transacionais.</li>
-<li>Otimização técnica contínua (SEO On-page e melhoria de PageSpeed) e integração de ferramentas de *analytics* para mapear o funil de conversão, reduzir o abandono de carrinho e maximizar as vendas.</li>
+                                <li>Conceção, desenvolvimento e gestão de websites institucionais e plataformas de e-commerce de alto desempenho, utilizando nativamente WordPress (WooCommerce) e Shopify.</li>
+                                <li>Personalização avançada de temas e integração de plugins/apps para expansão de funcionalidades, garantindo interfaces responsivas e uma experiência de navegação (UX) fluida e intuitiva.</li>
+                                <li>Administração contínua do *backoffice*, incluindo a gestão estruturada de catálogos de produtos, controlo de inventário, processamento de encomendas e automação de e-mails transacionais.</li>
+                                <li>Otimização técnica contínua (SEO On-page e melhoria de PageSpeed) e integração de ferramentas de *analytics* para mapear o funil de conversão, reduzir o abandono de carrinho e maximizar as vendas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                {/* CARGO 4 */}
+                <div className="tech-step">
+                    <div className="step-time">
+                        <span className="date-badge-tech">SET 2025<br />ATUALIDADE</span>
+                        <div className="step-dot" style={{ animationDelay: '0.5s' }}></div>
+                    </div>
+                    <div className="step-content">
+                        <div className="step-card">
+                            <h2 className="job-title">Part-time</h2>
+                            <div className="company-name">McDonald's</div>
+
+                            <span className="responsibilities-header">Responsabilidades & Conquistas</span>
+                            <ul className="responsibilities-list">
+                                <li>Atendimento ao cliente ao balcão, sala e <i>Drive-Thru</i>, assegurando um serviço rápido, cordial e eficiente para garantir uma excelente experiência de consumo.</li>
+                                <li>Vasta experiência na gestão e operação do grelhador, assegurando a confeção contínua de produtos sob elevada pressão e no estrito cumprimento das normas de higiene e segurança alimentar (HACCP).</li>
+                                <li>Sincronização do fluxo de produção e comunicação ativa com a linha de montagem, antecipando a procura durante os picos de afluência para evitar quebras no serviço (*bottlenecks*).</li>
+                                <li>Apoio transversal nas operações de <i>back-of-house</i>, incluindo a gestão de <i>stock</i>, calibração e limpeza dos equipamentos térmicos e trabalho de equipa num ambiente de ritmo acelerado (*fast-paced*).</li>
                             </ul>
                         </div>
                     </div>
