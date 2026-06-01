@@ -71,6 +71,12 @@ const scenarios: ScenarioItem[] = [
       { label: 'Mini-Relatório Parte Prática - Versão 2.docx', path: '/evidencias/cenarios/cenario_8/mini_relatorio_v2.docx' },
       { label: 'Mini-Relatório Parte Prática - Versão 3.docx', path: '/evidencias/cenarios/cenario_8/mini_relatorio_v3.docx' }
     ]
+  },
+  {
+    title: 'Resposta à Ciência Aberta',
+    files: [
+          { label: 'Ciência Aberta', path: '/evidencias/cenarios/resposta_ciencia_aberta.docx' }
+    ]
   }
 ];
 
