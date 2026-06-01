@@ -138,7 +138,7 @@ const Relatorio: React.FC = () => {
       <div className="report-header">
         <h1><span className="prompt-symbol-amber">&gt;_</span>tail -f relatorio_reflexivo.log</h1>
         <p style={{ color: '#64748b', fontSize: '1.1rem', margin: 0 }}>
-          Autoavaliação e síntese crítica do percurso e evolução técnica na Unidade Curricular.
+          Autoavaliação e síntese crítica do percurso na Unidade Curricular.
         </p>
       </div>
 
@@ -156,36 +156,36 @@ const Relatorio: React.FC = () => {
           {/* Secção 1 */}
           <div className="log-section">
             <span className="section-tag">01</span>
-            <h2 className="log-heading">Init_Context() : Introdução</h2>
+            <h2 className="log-heading">Init_Context() : Fundações e Metodologia</h2>
             <p className="log-text">
-              A elaboração deste documento representa um <i>dump</i> de memória essencial das aprendizagens adquiridas ao longo do semestre. Mais do que uma simples entrega académica, este portfólio digital constitui o ambiente de produção onde a teoria se converte em componentes funcionais. O processo exigiu uma análise estruturada, obrigando a transpor lógicas algorítmicas abstratas para aplicações responsivas, promovendo assim um exercício fundamental de metacognição tecnológica.
+              Este <i>log</i> documenta a minha evolução ao longo da unidade curricular de História da Ciência e das Técnicas (1º ano de Engenharia Informática). Longe de ser um simples arquivo de <i>outputs</i> académicos, este portfólio atua como um mecanismo de metacognição. Cada cenário aqui analisado resultou de um processo iterativo profundo: desde a pesquisa teórica e debate entre pares, até à validação estruturada com ferramentas de Inteligência Artificial Generativa (IAG), consolidando o meu pensamento crítico e capacidade argumentativa.
             </p>
           </div>
 
           {/* Secção 2 */}
           <div className="log-section">
             <span className="section-tag">02</span>
-            <h2 className="log-heading">Debug_Mode() : Desafios & Soluções</h2>
+            <h2 className="log-heading">Debug_Mode() : Navegando na Complexidade</h2>
             <p className="log-text">
-              Durante o ciclo de desenvolvimento, a estruturação de interfaces dinâmicas, a gestão de estado complexa (utilizando ferramentas modernas como <i>hooks</i>) e a curva de aprendizagem associada a novas <i>frameworks</i> apresentaram-se como os maiores obstáculos. Para ultrapassar o temido <i>dependency hell</i> e garantir a escalabilidade do código, adotei uma abordagem de pesquisa iterativa, recorrendo a documentação técnica e modularização do projeto. Esta metodologia não só resolveu os erros de compilação, como purificou a arquitetura de *software* final.
+              A transição de modelos teóricos para arquiteturas de *software* levanta *warnings* complexos. Desenhar infraestruturas para *Smart Cities* ou Hospitais Inteligentes obrigou-me a balancear a inovação tecnológica com barreiras legais rigorosas, nomeadamente o RGPD e o *AI Act*. Para contornar a latência em operações industriais críticas e modernizar sistemas legados, mergulhei no potencial do *Edge Computing* e dos *Digital Twins*. Foi um teste exigente à minha capacidade de filtrar o 'ruído' informático, cultivando uma "mente preparada" para identificar soluções de alto impacto num mar de inovações emergentes.
             </p>
           </div>
 
           {/* Secção 3 */}
           <div className="log-section">
             <span className="section-tag">03</span>
-            <h2 className="log-heading">System_Update() : Crescimento Técnico</h2>
+            <h2 className="log-heading">System_Update() : Evolução Sistémica</h2>
             <p className="log-text">
-              A análise retrospetiva demonstra uma mudança clara de paradigma: a evolução de uma mentalidade de "escrever *scripts* funcionais" para "engenharia de *software*". A adoção rigorosa dos princípios de <i>Clean Code</i> e o foco obsessivo na jornada do utilizador (UX/UI) transformaram o meu fluxo de trabalho. Percebi que o código bem escrito é aquele que é legível para humanos e não apenas para máquinas, elevando os meus padrões de otimização de <i>performance</i> e acessibilidade <i>web</i>.
+              Analisando os meus primeiros <i>commits</i> neste percurso, noto uma clara mudança de paradigma. Inicialmente, o foco estava em transpor filosofias científicas para a tecnologia — como aplicar o falsificacionismo de Popper ao *Software Testing* ou interpretar falhas críticas de sistema através das revoluções de Kuhn. Gradualmente, a minha visão escalou para a resiliência e otimização à escala da Indústria 4.0/5.0. Desenvolvi uma preocupação obsessiva em mitigar vulnerabilidades como *Ransomware* e eliminar *Single Points of Failure*, integrando conceitos avançados como *Big Data*, *Smart Grids* e a indispensável transparência da *Explainable AI* (XAI) nas tomadas de decisão de IA.
             </p>
           </div>
 
           {/* Secção 4 */}
           <div className="log-section">
             <span className="section-tag">04</span>
-            <h2 className="log-heading">Future_Builds() : Conclusão e Perspetivas</h2>
+            <h2 className="log-heading">Future_Builds() : Visão Antropocêntrica</h2>
             <p className="log-text">
-              Em suma, o desenvolvimento deste projeto provou ser o compilador ideal para o meu crescimento profissional. O paradigma daqui em diante assenta na Integração Contínua: o meu objetivo é manter o repositório deste portfólio ativo no GitHub, realizando <i>commits</i> regulares de novos projetos e tecnologias que vou masterizando. Como futuro Engenheiro, levo a convicção de que a tecnologia só cumpre o seu propósito quando desenhada para resolver problemas reais com segurança e eficiência.
+              O verdadeiro *build* final desta unidade curricular não é código, mas sim responsabilidade. Compreendi que o mercado já não valoriza apenas o *know-how* técnico, mas exige urgentemente o *know-why* — a razão e o impacto daquilo que desenvolvemos. Como futuro Engenheiro de Software, retenho como princípio fundamental que qualquer arquitetura tecnológica tem de ser antropocêntrica. Ao colocar a premissa do *Human-in-the-Loop* no centro do design, garanto que as soluções criadas não são apenas à prova de falhas, mas eticamente alinhadas com a resiliência e sustentabilidade da sociedade.
             </p>
           </div>
 

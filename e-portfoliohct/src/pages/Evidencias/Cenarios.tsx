@@ -89,8 +89,7 @@ const Cenarios: React.FC = () => {
       <div>
         <h1>Cenários de Aprendizagem</h1>
         <p className="section-copy" style={{ marginBottom: '24px' }}>
-          Lista dos ficheiros disponíveis em <strong>public/evidencias/Cenários</strong>.
-        </p>
+                  </p>
       </div>
 
       {scenarios.map((scenario) => (

@@ -229,13 +229,13 @@ const Contactos: React.FC = () => {
           
           <div className="contact-card">
             <span className="card-label">const email = </span>
-            <p className="card-value">pedro.vale@my.istec.pt</p>
+            <p className="card-value">pedro.vale.2022145@my.istec.pt</p>
             <p className="card-desc">E-mail institucional para contacto direto e formal.</p>
           </div>
 
           <div className="contact-card">
             <span className="card-label">const phone = </span>
-            <p className="card-value">+351 963 964 890</p>
+            <p className="card-value">+351 935 092 647</p>
             <p className="card-desc">Disponibilidade para chamadas e resoluções rápidas.</p>
           </div>
 
@@ -245,10 +245,10 @@ const Contactos: React.FC = () => {
               Acompanha o meu percurso e o código dos meus projetos nas plataformas:
             </p>
             <div className="social-buttons">
-              <a href="#" target="_blank" className="btn-social">
+              <a href="https://www.linkedin.com/in/pedro-vale-842004211/" target="_blank" className="btn-social">
                 in LinkedIn
               </a>
-              <a href="#" target="_blank" className="btn-social" style={{ background: '#333' }}>
+              <a href="https://github.com/QuakeXIV" target="_blank" className="btn-social" style={{ background: '#333' }}>
                 &lt;/&gt; GitHub
               </a>
             </div>
