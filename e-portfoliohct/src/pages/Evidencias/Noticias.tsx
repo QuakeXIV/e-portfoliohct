@@ -15,73 +15,73 @@ const newsLogs: NewsItem[] = [
     week: "Semana 1",
     date: "02.03.2026 - 09.03.2026",
     commitHash: "7a2b9f1",
-    title: "Novo Pólo de IA para a Sustentabilidade no INESC TEC",
-    summary: "O INESC TEC anunciou novos avanços na aplicação de Inteligência Artificial para otimizar as redes energéticas nacionais e prever consumos, marcando um passo vital na transição digital e energética de Portugal.",
-    tags: ["Inteligência Artificial", "Sustentabilidade", "INESC TEC"],
-    sourceUrl: "https://www.inesctec.pt/pt/noticias"
+    title: "O Regresso do 'The Next Big Idea': Inovação e Startups em Portugal",
+    summary: "O programa tecnológico The Next Big Idea regressou à SIC Notícias, focando-se no empreendedorismo e disponibilizando a mais completa base de dados de startups e incubadoras do país para mostrar quem está a redefinir a criação de valor em Portugal.",
+    tags: ["Startups", "Inovação", "Media"],
+    sourceUrl: "https://24noticias.sapo.pt/tecnologia/artigos/the-next-big-idea-de-regresso-a-sic-noticias-este-sabado"
   },
   {
     week: "Semana 2",
     date: "09.03.2026 - 16.03.2026",
     commitHash: "3c8e4d2",
-    title: "Açores como Hub de Advanced Air Mobility (AAM)",
-    summary: "Início de parcerias aeronáuticas vitais para testar a implementação de sistemas de mobilidade aérea avançada (drones e eVTOLs autónomos) nos Açores, destinados à monitorização remota e operações de segurança.",
-    tags: ["Aeroespacial", "Drones", "Açores"],
-    sourceUrl: "https://tek.sapo.pt/noticias/computadores"
+    title: "FCT Aloca Financiamento para Novos Projetos de I&D",
+    summary: "A Fundação para a Ciência e a Tecnologia (FCT) encerrou o processo do Concurso de Projetos I&D em todos os Domínios Científicos, canalizando verbas essenciais para Investigação e Desenvolvimento Tecnológico (IC&DT) visando fortalecer o avanço científico nacional.",
+    tags: ["Investigação", "Ciência", "FCT"],
+    sourceUrl: "https://www.fct.pt/concursos/concurso-de-projetos-i-d-em-todos-os-dominios-cientificos-2025"
   },
   {
     week: "Semana 3",
     date: "16.03.2026 - 23.03.2026",
     commitHash: "9f1a7b5",
-    title: "Tecnologia IoT na Mitigação de Cheias e Secas",
-    summary: "Avanços governamentais na estratégia de gestão hídrica, com a aprovação da barragem de Girabolhos e o estudo de sistemas baseados em sensores IoT para a prevenção e resposta a desastres naturais no centro do país.",
-    tags: ["IoT", "Prevenção", "Gestão Hídrica"],
-    sourceUrl: "https://www.publico.pt/tecnologia"
+    title: "Novo Centro de Tecnologia e Inovação no Tâmega e Sousa",
+    summary: "Foi formalizada a criação de um novo polo industrial e tecnológico numa antiga Fábrica da Moagem. O projeto junta 18 entidades de peso, incluindo o INESC TEC e o Politécnico do Porto, para acelerar as áreas de Inteligência Artificial e Ciência de Dados.",
+    tags: ["Polo Industrial", "INESC TEC", "Dados"],
+    sourceUrl: "https://valsousatv.sapo.pt/2026/04/02/centro-de-tecnologia-e-inovacao-vai-transformar-antiga-fabrica-da-moagem-em-polo-industrial-de-referencia-no-tamega-e-sousa/"
   },
   {
     week: "Semana 4",
     date: "06.04.2026 - 13.04.2026",
     commitHash: "5d2c8e4",
-    title: "IPMA Integra Machine Learning na Previsão Meteorológica",
-    summary: "O Instituto Português do Mar e da Atmosfera reforçou os seus processos analíticos com modelos preditivos baseados em Machine Learning, visando alertar atempadamente a população sobre fenómenos climáticos extremos.",
-    tags: ["Machine Learning", "Meteorologia", "IPMA"],
-    sourceUrl: "https://www.ipma.pt/pt/media/noticias/"
+    title: "A Transformação das Empresas com IA e Serviços Geridos",
+    summary: "O Jornal Económico promoveu um debate profundo no 'Dito ao Ouvido' sobre a necessidade de humanizar a Inteligência Artificial, sublinhando que aproveitar o talento tecnológico nacional com as devidas soft skills é crítico para um futuro mais sustentável.",
+    tags: ["Inteligência Artificial", "Economia", "Empresas"],
+    sourceUrl: "https://jornaleconomico.sapo.pt/noticias/inovacao-e-inteligencia-artificial-como-a-tecnologia-esta-a-transformar-empresas-e-pessoas/"
   },
   {
     week: "Semana 5",
     date: "13.04.2026 - 20.04.2026",
     commitHash: "1b9f7a3",
-    title: "Inovação Médica: Deteção de Biomarcadores com LLMs",
-    summary: "Investigadores apresentaram novas provas de conceito para a deteção precoce de patologias oncológicas recorrendo a Modelos de Linguagem de Grande Escala (LLMs) aplicados à análise de milhares de registos clínicos.",
-    tags: ["HealthTech", "LLMs", "Investigação"],
-    sourceUrl: "https://visao.pt/exameinformatica/"
+    title: "A Democratização da Tecnologia em 30 Anos",
+    summary: "Uma análise retrospectiva e visionária sobre como Portugal saltou de um país de baixa digitalização para uma sociedade hiperconectada, com as grandes marcas tecnológicas a debaterem o desafio de reduzir o fosso entre inovação de ponta e utilidade diária.",
+    tags: ["Sociedade", "Digitalização", "Consumo"],
+    sourceUrl: "https://eco.sapo.pt/opiniao/de-luxo-a-essencial-como-a-tecnologia-se-democratizou-em-portugal/"
   },
   {
     week: "Semana 6",
     date: "20.04.2026 - 27.04.2026",
     commitHash: "8e4d2c9",
-    title: "Estratégia Nacional de Energia Oceânica e Eólica",
-    summary: "Publicação de novos dados técnicos que confirmam o enorme potencial do Atlântico português para a expansão de turbinas eólicas offshore de nova geração e eletrificação verde da economia.",
-    tags: ["Energias Renováveis", "Offshore", "Transição Verde"],
-    sourceUrl: "https://eco.sapo.pt/"
+    title: "Drones e Mobilidade Aérea Avançada no Ciência Viva",
+    summary: "Nos dias 22 e 23 de abril, Figueira de Castelo Rodrigo acolheu o Encontro da Rede de Centros Ciência Viva com foco prático no uso de tecnologias aéreas, nomeadamente drones, como apoio crítico em cenários de proteção civil, saúde e logística.",
+    tags: ["Robótica", "Educação", "Drones"],
+    sourceUrl: "https://turismodocentro.pt/evento/encontro-nacional-da-rede-de-centros-de-ciencia-viva/"
   },
   {
     week: "Semana 7",
     date: "04.05.2026 - 11.05.2026",
     commitHash: "2c9f1a7",
-    title: "Robótica Submarina Portuguesa em Destaque no Sado",
-    summary: "Engenheiros e biólogos portugueses testaram com sucesso sistemas de drones submarinos autónomos (AUV) para mapear a biodiversidade marinha na zona da Arrábida de forma totalmente não intrusiva.",
-    tags: ["Robótica", "AUV", "Oceanografia"],
-    sourceUrl: "https://www.rtp.pt/noticias/ciencia"
+    title: "A Velocidade Exponencial da Disrupção Tecnológica",
+    summary: "Num artigo de opinião impactante no Observador, debate-se a falha da classe política perante o avanço da computação: a IA avança a ritmos diários, enquanto a regulação tecnológica demora anos a aprovar diretrizes básicas.",
+    tags: ["Regulação", "Opinião", "Estado"],
+    sourceUrl: "https://observador.pt/opiniao/a-grande-disrupcao-nao-e-a-tecnologia-e-a-velocidade/"
   },
   {
     week: "Semana 8",
     date: "11.05.2026 - 18.05.2026",
     commitHash: "e4f5g6h",
-    title: "Inauguração do Star Institute em Viseu",
-    summary: "O Primeiro-Ministro inaugurou oficialmente o Star Institute, reforçando que a aproximação entre as empresas e as instituições de ensino tecnológico é o verdadeiro motor de desenvolvimento e fixação de talento em Portugal.",
-    tags: ["Educação Tecnológica", "Indústria", "Políticas Públicas"],
-    sourceUrl: "https://www.jornaldenegocios.pt/empresas/tecnologias"
+    title: "Portugal Smart Cities Summit na FIL",
+    summary: "Lisboa acolhe, entre 12 e 14 de maio de 2026, o maior evento dedicado às cidades do futuro. Especialistas em IoT, Cibersegurança, Smart Buildings e Redes de Comunicação encontram-se para moldar o paradigma das cidades inteligentes em Portugal.",
+    tags: ["Smart Cities", "IoT", "Cibersegurança"],
+    sourceUrl: "https://portugalsmartcities.fil.pt/"
   }
 ];
 
@@ -126,7 +126,7 @@ const Noticias: React.FC = () => {
           position: absolute;
           top: 8px;
           bottom: 8px;
-          left: 31px; /* Alinhado ao centro da bolinha */
+          left: 31px;
           width: 2px;
           background: #e2e8f0;
           z-index: 0;
