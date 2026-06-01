@@ -27,10 +27,12 @@ const Competencias: React.FC = () => {
           margin-right: 10px;
         }
 
+        /* ================= GRELHA DE SKILLS ================= */
         .skills-grid {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 24px;
+          margin-bottom: 60px;
         }
 
         .skill-card {
@@ -44,7 +46,6 @@ const Competencias: React.FC = () => {
           overflow: hidden;
         }
 
-        /* Barra de título do cartão a simular a aba de um editor de código */
         .skill-card::before {
           content: '';
           position: absolute;
@@ -104,10 +105,86 @@ const Competencias: React.FC = () => {
           transform: scale(1.05);
         }
 
+        /* ================= INCODE 2030 (BARRAS DE PROGRESSO) ================= */
+        .incode-section {
+          background: var(--surface, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 12px;
+          padding: 40px;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .incode-title {
+          font-family: '"Fira Code", monospace', sans-serif;
+          font-size: 1.5rem;
+          color: var(--text-h, #0f172a);
+          margin: 0 0 32px 0;
+          font-weight: 800;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+
+        .incode-icon {
+          color: #10b981; /* Verde sucesso */
+        }
+
+        .progress-group {
+          margin-bottom: 24px;
+        }
+
+        .progress-group:last-child {
+          margin-bottom: 0;
+        }
+
+        .progress-label {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          font-weight: 700;
+          font-size: 1.05rem;
+          color: #1e293b;
+          margin-bottom: 8px;
+        }
+
+        .progress-bar-bg {
+          width: 100%;
+          height: 24px;
+          background-color: #e2e8f0;
+          border-radius: 6px;
+          overflow: hidden;
+        }
+
+        .progress-bar-fill {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+          font-family: '"Fira Code", monospace', sans-serif;
+          font-size: 0.85rem;
+          font-weight: 700;
+          border-radius: 6px;
+          /* Animação suave ao carregar a página */
+          animation: loadBar 1.5s ease-out forwards;
+        }
+
+        @keyframes loadBar {
+          from { width: 0; }
+        }
+
+        /* Cores exatas do certificado */
+        .fill-yellow { background-color: #d4af37; }
+        .fill-blue   { background-color: #72aee6; }
+        .fill-orange { background-color: #e67e22; }
+        .fill-green  { background-color: #7cb342; }
+        .fill-red    { background-color: #e05666; }
+
         /* Responsivo para telemóveis */
         @media (max-width: 768px) {
           .skills-grid {
             grid-template-columns: 1fr;
+          }
+          .incode-section {
+            padding: 24px;
           }
         }
       `}</style>
@@ -154,7 +231,7 @@ const Competencias: React.FC = () => {
           </div>
         </div>
 
-     {/* Bloco 3: Formação ISTEC */}
+       {/* Bloco 3: Formação ISTEC */}
         <div className="skill-card">
           <h2 className="skill-category-title">formacao_istec</h2>
           <div className="tags-container">
@@ -190,6 +267,65 @@ const Competencias: React.FC = () => {
         </div>
 
       </div>
+
+      {/* RESULTADOS INCODE 2030 */}
+      <div className="incode-section">
+        <h2 className="incode-title">
+          <span className="incode-icon">✓</span> ./diagnostico_incode2030.sh
+        </h2>
+
+        {/* 1. Literacia */}
+        <div className="progress-group">
+          <div className="progress-label">1. Literacia de informação e de dados</div>
+          <div className="progress-bar-bg">
+            <div className="progress-bar-fill fill-yellow" style={{ width: '85%' }}>
+              C1 - Líder
+            </div>
+          </div>
+        </div>
+
+        {/* 2. Comunicação */}
+        <div className="progress-group">
+          <div className="progress-label">2. Comunicação e colaboração</div>
+          <div className="progress-bar-bg">
+            <div className="progress-bar-fill fill-blue" style={{ width: '95%' }}>
+              C2 - Pioneiro
+            </div>
+          </div>
+        </div>
+
+        {/* 3. Criação de conteúdo */}
+        <div className="progress-group">
+          <div className="progress-label">3. Criação de conteúdo digital</div>
+          <div className="progress-bar-bg">
+            <div className="progress-bar-fill fill-orange" style={{ width: '100%' }}>
+              C2 - Pioneiro
+            </div>
+          </div>
+        </div>
+
+        {/* 4. Segurança */}
+        <div className="progress-group">
+          <div className="progress-label">4. Segurança</div>
+          <div className="progress-bar-bg">
+            <div className="progress-bar-fill fill-green" style={{ width: '100%' }}>
+              C2 - Pioneiro
+            </div>
+          </div>
+        </div>
+
+        {/* 5. Resolução de problemas */}
+        <div className="progress-group">
+          <div className="progress-label">5. Resolução de problemas</div>
+          <div className="progress-bar-bg">
+            <div className="progress-bar-fill fill-red" style={{ width: '100%' }}>
+              C2 - Pioneiro
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   );
 };
