@@ -36,8 +36,10 @@ const Footer: React.FC = () => {
         <div className="footer-col submenu-col">
           <h4 className="footer-title">Apresentação</h4>
           <ul className="footer-list">
-            <li><Link to="/apresentacao" className="footer-link">Pessoal</Link></li>
-            <li><Link to="/apresentacao" className="footer-link">Percurso Académico</Link></li>
+            <li><Link to="/apresentacao/apresentacao" className="footer-link">Pessoal</Link></li>
+            <li><Link to="/apresentacao/percurso" className="footer-link">Percurso Académico</Link></li>
+            <li><Link to="/apresentacao/profissional" className="footer-link">Percurso Profissional</Link></li>
+            <li><Link to="/apresentacao/competencias" className="footer-link">Competências</Link></li>
           </ul>
         </div>
 
@@ -46,6 +48,7 @@ const Footer: React.FC = () => {
           <ul className="footer-list">
             <li><Link to="/evidencias/artigo" className="footer-link">Artigo Científico</Link></li>
             <li><Link to="/evidencias/cenarios" className="footer-link">Cenários Práticos</Link></li>
+            <li><Link to="/evidencias/noticias" className="footer-link">Notícias</Link></li>
           </ul>
         </div>
       </div>
