@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
            </div>
             <h3 className="footer-brand-title">ISTEC Porto</h3> 
             <p className="footer-info"><strong>Licenciatura:</strong> Engenharia Informática</p>
-          <p className="footer-info"><strong>Unidade Curricular:</strong> Portfólio Académico e Profissional</p>
+          <p className="footer-info"><strong>Unidade Curricular:</strong> História da Ciência e das Técnicas</p>
           <p className="footer-info"><strong>Ano Letivo:</strong> 2025 / 2026</p>
           <div className="social-icons">
             <a href="https://www.linkedin.com/in/pedro-vale-842004211/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="social-link">in</a>

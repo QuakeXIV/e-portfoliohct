@@ -4,29 +4,42 @@ import profilePhoto from '../assets/FotoTipoPasse_PedroVale.jpg';
 
 const Inicio: React.FC = () => {
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '40px 20px' }}>
+    <div className="inicio-root">
       
-      {/* CSS Embutido para o Layout Tech / Terminal (Página Inicial) */}
+      {/* CSS Embutido para o Layout Tech / Terminal */}
       <style>{`
+        .inicio-root {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 40px 20px;
+        }
+
         /* ================= HERO SECTION ================= */
-       /* ================= HERO SECTION ================= */
         .hero-section {
           display: flex;
           align-items: center;
           justify-content: space-between;
           gap: 60px;
-          margin-bottom: 80px;
-          padding-bottom: 60px;
+          margin-bottom: 40px; 
+          padding-bottom: 40px; 
           border-bottom: 1px dashed var(--border, #cbd5e1);
+          height: auto !important; /* Força a anular regras antigas */
+          min-height: 0 !important;
         }
 
-        /* CORREÇÃO PRINCIPAL: Empilhar texto na vertical */
         .hero-content {
           flex: 1;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           max-width: 650px;
+        }
+
+        .status-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-bottom: 24px;
         }
 
         .tech-badge {
@@ -40,8 +53,35 @@ const Inicio: React.FC = () => {
           border: 1px solid rgba(59, 130, 246, 0.2);
           text-transform: uppercase;
           font-weight: 700;
-          margin-bottom: 24px;
           letter-spacing: 0.05em;
+        }
+
+        .system-status {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-family: '"Fira Code", monospace', sans-serif;
+          font-size: 0.8rem;
+          color: #10b981;
+          font-weight: 600;
+          background: rgba(16, 185, 129, 0.1);
+          padding: 6px 12px;
+          border-radius: 20px;
+        }
+
+        .pulse-dot {
+          width: 8px;
+          height: 8px;
+          background-color: #10b981;
+          border-radius: 50%;
+          box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+          animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+          0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+          70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+          100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
         }
 
         .hero-name {
@@ -68,7 +108,6 @@ const Inicio: React.FC = () => {
           margin: 0 0 32px 0;
         }
 
-        /* CORREÇÃO DOS BOTÕES: Forçar linha na horizontal */
         .hero-actions {
           display: flex;
           flex-direction: row;
@@ -88,46 +127,7 @@ const Inicio: React.FC = () => {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          white-space: nowrap; /* Evita que o texto do botão quebre */
-        }
-
-        .btn-tech-primary {
-          background: #3b82f6;
-          color: #ffffff;
-          border: 2px solid #3b82f6;
-          box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.39);
-        }
-
-        .btn-tech-primary:hover {
-          background: #2563eb;
-          border-color: #2563eb;
-          transform: translateY(-2px);
-          box-shadow: 0 6px 20px rgba(59, 130, 246, 0.23);
-        }
-
-        .btn-tech-secondary {
-          background: transparent;
-          color: var(--text-h, #0f172a);
-          border: 2px solid #cbd5e1;
-        }
-
-        .btn-tech-secondary:hover {
-          border-color: #3b82f6;
-          color: #3b82f6;
-          transform: translateY(-2px);
-        }
-
-        .btn-tech-primary, .btn-tech-secondary {
-          font-family: '"Fira Code", monospace', sans-serif;
-          font-size: 0.95rem;
-          font-weight: 700;
-          padding: 14px 28px;
-          border-radius: 8px;
-          text-decoration: none;
-          transition: all 0.3s ease;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
+          white-space: nowrap;
         }
 
         .btn-tech-primary {
@@ -188,7 +188,7 @@ const Inicio: React.FC = () => {
           z-index: 2;
         }
 
-        /* ================= FRAMEWORK SECTION ================= */
+        /* ================= FRAMEWORK SECTION (Terminal) ================= */
         .tech-section-title {
           font-family: '"Fira Code", monospace', sans-serif;
           font-size: 1.8rem;
@@ -200,35 +200,76 @@ const Inicio: React.FC = () => {
         .tech-section-subtitle {
           color: #64748b;
           font-size: 1.1rem;
-          margin: 0 0 32px 0;
+          margin: 0 0 24px 0; 
         }
 
-        .framework-content {
-          background: #f8fafc;
-          border-left: 4px solid #3b82f6;
-          padding: 24px 32px;
-          border-radius: 0 12px 12px 0;
-          margin-bottom: 80px;
-          box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+        .terminal-block {
+          background: #0f172a;
+          border-radius: 12px;
+          overflow: hidden;
+          margin-bottom: 50px; 
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
 
-        .framework-text {
-          color: var(--text-p, #475569);
-          font-size: 1.05rem;
+        .terminal-header {
+          background: #1e293b;
+          padding: 12px 20px;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #334155;
+        }
+
+        .mac-controls {
+          display: flex;
+          gap: 8px;
+        }
+
+        .mac-dot {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+        }
+
+        .terminal-title {
+          font-family: '"Fira Code", monospace', sans-serif;
+          color: #94a3b8;
+          font-size: 0.85rem;
+          margin-left: 16px;
+        }
+
+        .terminal-body {
+          padding: 32px;
+          color: #f8fafc;
+          font-family: '"Fira Code", monospace', sans-serif;
+          font-size: 0.95rem;
           line-height: 1.8;
+        }
+
+        .cmd-line {
+          color: #38bdf8;
+          margin-bottom: 16px;
+          font-weight: 600;
+        }
+
+        .terminal-text {
+          color: #cbd5e1;
           margin: 0 0 16px 0;
+          text-align: justify;
         }
         
-        .framework-text:last-child {
+        .terminal-text:last-child {
           margin-bottom: 0;
         }
+
+        .keyword-hl { color: #f472b6; }
+        .string-hl { color: #a3e635; }
 
         /* ================= JOURNEY SECTION ================= */
         .journey-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 24px;
-          margin-top: 40px;
+          margin-top: 24px;
         }
 
         .journey-card {
@@ -245,6 +286,17 @@ const Inicio: React.FC = () => {
           text-decoration: none;
           height: 100%;
           box-sizing: border-box;
+          background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+          background-size: 20px 20px;
+          background-position: -10px -10px;
+        }
+
+        .journey-card::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 100%);
+          z-index: 0;
         }
 
         /* Marca de Água */
@@ -321,19 +373,38 @@ const Inicio: React.FC = () => {
           gap: 12px;
         }
 
-        /* Responsivo */
+        /* ================= RESPONSIVO (TELEMÓVEIS) ================= */
         @media (max-width: 992px) {
+          .inicio-root {
+            padding: 10px 20px; /* Reduz espaço no topo do mobile */
+          }
+          
           .hero-section {
-            flex-direction: column-reverse;
+            flex-direction: column-reverse; /* Mantém a imagem em cima do texto */
             text-align: center;
-            gap: 40px;
+            gap: 24px; /* Reduz brutalmente o gap entre a foto e o nome */
+            margin-bottom: 24px;
+            padding-bottom: 24px;
           }
+          
+          .hero-image-wrapper {
+            width: 260px; /* Imagem mais compacta no mobile */
+            height: 260px;
+            margin: 0 auto;
+          }
+
+          .status-wrapper {
+            justify-content: center;
+          }
+          
           .hero-bio {
-            margin: 0 auto 32px auto;
+            margin: 0 auto 24px auto;
           }
+          
           .hero-actions {
             justify-content: center;
           }
+          
           .journey-grid {
             grid-template-columns: 1fr;
           }
@@ -343,7 +414,12 @@ const Inicio: React.FC = () => {
       {/* ================= HERO SECTION ================= */}
       <section className="hero-section">
         <div className="hero-content">
-          <span className="tech-badge">[ ENV: PRODUCTION ]</span>
+          <div className="status-wrapper">
+            <span className="tech-badge">[ ENV: PRODUCTION ]</span>
+            <div className="system-status">
+              <span className="pulse-dot"></span> System Online
+            </div>
+          </div>
           <h1 className="hero-name"><span className="prompt-symbol-blue">&gt;_</span>Pedro Vale</h1>
           <p className="hero-bio">
             Futuro Engenheiro Informático em formação no ISTEC Porto. Movido pela curiosidade e pela resolução de problemas complexos, utilizo este espaço digital para partilhar a minha evolução técnica, os desafios superados e os projetos desenvolvidos.
@@ -363,18 +439,31 @@ const Inicio: React.FC = () => {
         </div>
       </section>
 
-      {/* ================= ENQUADRAMENTO ================= */}
+      {/* ================= ENQUADRAMENTO (TERMINAL BLOCK) ================= */}
       <section className="portfolio-framework">
         <h2 className="tech-section-title">Enquadramento do Portfólio</h2>
         <p className="tech-section-subtitle">O objetivo e importância desta plataforma no desenvolvimento académico.</p>
 
-        <div className="framework-content">
-          <p className="framework-text">
-            Este E-Portfólio atua como o <i>log</i> central da minha evolução académica em Engenharia Informática. Aqui, os conceitos teóricos ganham forma através de evidências práticas e cenários de estudo, refletindo a sua aplicação direta na resolução de problemas concretos.
-          </p>
-          <p className="framework-text">
-            Funciona, também, como um mecanismo contínuo de autoavaliação e calibração de objetivos profissionais. Ao registar cada etapa e ferramenta dominada, construo uma fundação sólida que alinha o meu conhecimento com as elevadas exigências e ritmo do setor tecnológico atual.
-          </p>
+        <div className="terminal-block">
+          <div className="terminal-header">
+            <div className="mac-controls">
+              <div className="mac-dot" style={{ backgroundColor: '#ef4444' }}></div>
+              <div className="mac-dot" style={{ backgroundColor: '#f59e0b' }}></div>
+              <div className="mac-dot" style={{ backgroundColor: '#10b981' }}></div>
+            </div>
+            <span className="terminal-title">~/portfolio/README.md</span>
+          </div>
+          <div className="terminal-body">
+            <div className="cmd-line">~ $ cat README.md</div>
+            <p className="terminal-text">
+              <span className="keyword-hl">import</span> <span className="string-hl">"academic_growth"</span>;
+              <br /><br />
+              Este E-Portfólio atua como o <i>log</i> central da minha evolução académica em Engenharia Informática. Aqui, os conceitos teóricos ganham forma através de evidências práticas e cenários de estudo, refletindo a sua aplicação direta na resolução de problemas concretos.
+            </p>
+            <p className="terminal-text">
+              Funciona, também, como um mecanismo contínuo de autoavaliação e calibração de objetivos profissionais. Ao registar cada etapa e ferramenta dominada, construo uma fundação sólida que alinha o meu conhecimento com as elevadas exigências e ritmo do setor tecnológico atual. <span style={{ animation: 'pulse 1s infinite' }}>_</span>
+            </p>
+          </div>
         </div>
       </section>
 
@@ -388,7 +477,7 @@ const Inicio: React.FC = () => {
           {/* Cartão 1 */}
           <Link to="/apresentacao" className="journey-card" data-step="01">
             <div className="card-content">
-              <span className="card-module">MODULE 01</span>
+              <span className="card-module">/usr/apresentacao</span>
               <h3 className="card-title">Apresentação</h3>
               <p className="card-desc">O meu percurso académico, competências técnicas core e o mapeamento dos meus objetivos profissionais.</p>
               <span className="journey-cta">Executar <span aria-hidden="true">→</span></span>
@@ -398,7 +487,7 @@ const Inicio: React.FC = () => {
           {/* Cartão 2 */}
           <Link to="/evidencias/cenarios" className="journey-card" data-step="02">
             <div className="card-content">
-              <span className="card-module">MODULE 02</span>
+              <span className="card-module">/bin/evidencias</span>
               <h3 className="card-title">Evidências</h3>
               <p className="card-desc">Projetos práticos, cenários reais resolvidos, documentação técnica estruturada e artigos de investigação.</p>
               <span className="journey-cta">Consultar <span aria-hidden="true">→</span></span>
@@ -408,7 +497,7 @@ const Inicio: React.FC = () => {
           {/* Cartão 3 */}
           <Link to="/relatorio" className="journey-card" data-step="03">
             <div className="card-content">
-              <span className="card-module">MODULE 03</span>
+              <span className="card-module">/var/log/relatorio</span>
               <h3 className="card-title">Relatório</h3>
               <p className="card-desc">Reflexões analíticas detalhadas sobre o processo de aprendizagem, os *bugs* superados e o crescimento técnico.</p>
               <span className="journey-cta">Ler Logs <span aria-hidden="true">→</span></span>
