@@ -123,12 +123,30 @@ const Relatorio: React.FC = () => {
           text-align: justify;
         }
 
+        .log-text-group {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        .log-list {
+          color: var(--text-p, #475569);
+          line-height: 1.8;
+          font-size: 1rem;
+          margin: 0;
+          padding-left: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          text-align: justify;
+        }
+
         /* Responsivo */
         @media (max-width: 768px) {
           .log-content {
             padding: 24px 20px;
           }
-          .log-text {
+          .log-text, .log-list {
             text-align: left;
           }
         }
@@ -156,37 +174,85 @@ const Relatorio: React.FC = () => {
           {/* Secção 1 */}
           <div className="log-section">
             <span className="section-tag">01</span>
-            <h2 className="log-heading">Introdução e Metodologia</h2>
+            <h2 className="log-heading">Introdução</h2>
             <p className="log-text">
-              Este documento reflete a minha evolução ao longo da unidade curricular de História da Ciência e das Técnicas (1º ano de Engenharia Informática). Longe de ser um simples arquivo de trabalhos académicos, este portfólio atua como um instrumento de metacognição. Cada cenário aqui analisado resultou de um processo iterativo e aprofundado: desde a pesquisa teórica e o debate entre pares, até à validação estruturada com ferramentas de Inteligência Artificial Generativa (IAG), consolidando o meu pensamento crítico e a minha capacidade argumentativa.
+              Este relatório pretende documentar e refletir sobre o período de aprendizagem na unidade curricular de História da Ciência e das Técnicas, lecionada pela Doutora Luísa Orvalho, no 2.º semestre do 1.º ano da Licenciatura em Engenharia Informática, no Instituto Superior de Tecnologias Avançadas do Porto (ISTEC Porto). O objetivo é promover a autoavaliação e a reflexão crítica, para compreender melhor o meu crescimento pessoal e académico.
             </p>
           </div>
 
           {/* Secção 2 */}
           <div className="log-section">
             <span className="section-tag">02</span>
-            <h2 className="log-heading">Desafios e Contexto Regulatório</h2>
-            <p className="log-text">
-              A transição de modelos teóricos para arquiteturas de sistemas levanta desafios complexos. Desenhar infraestruturas para Cidades Inteligentes (<i>Smart Cities</i>) ou Hospitais Inteligentes obrigou-me a ponderar o equilíbrio entre a inovação tecnológica e o cumprimento de normativas legais rigorosas, nomeadamente o RGPD e o <i>AI Act</i>. Para compreender a otimização de latência em operações industriais críticas e a modernização de sistemas legados, analisei o potencial do <i>Edge Computing</i> e dos <i>Digital Twins</i>. Este percurso exigiu uma elevada capacidade de filtragem de informação, cultivando uma "mente preparada" para identificar soluções de alto impacto face à rápida emergência de novas tecnologias.
-            </p>
+            <h2 className="log-heading">Objetivos de Aprendizagem</h2>
+            <ul className="log-list">
+              <li>Identificar os factos significativos e determinantes do percurso do Homem na construção da Ciência e da Técnica em ordem ao estabelecimento das relações entre esses fatos, à descoberta das linhas balizadoras do progresso técnico, científico e tecnológico, à avaliação das respetivas fases da evolução e à compreensão do emaranhamento técnico-científico do seu estádio atual;</li>
+              <li>Desenvolver o interesse pela investigação e capacidade para acompanhar com atitudes de autonomia e cooperação, os fatos quotidianos relacionados com a Ciência – Tecnologia – Sociedade (CT&S);</li>
+              <li>Discutir temas e conceitos de CT&S inseridos em contextos reais e sociais, dando sentido funcional aos conceitos-chave aprendidos do ponto de vista científico-tecnológico e socio-humanista;</li>
+              <li>Demonstrar interesse e curiosidade pela investigação e divulgação científica, pela cultura, conhecimento e pelos temas que estão na ordem do dia relativamente ao “Conhecimento e Inovação”;</li>
+              <li>Evidenciar competências interpretativas, comunicacionais, expressivas, reflexivas, de juízo crítico e criativo que facilitem a compreensão da sociedade VUCA (Volátil, Incerta, Complexa e Ambígua) contemporânea, a perspetiva crítica da Ciência e da Tecnologia, a Cidadania ativa da intervenção reflexiva sobre as implicações éticas da Ciência, os limites da Ciência, a digitalização no mercado laboral e o recrutamento dos Recursos Humanos;</li>
+              <li>Trabalhar as temáticas de HCT de forma interdisciplinar com as diferentes UC do plano de estudos, e especialmente, com a UC de Projeto, relativamente à fundamentação teórica e revisão do estado da arte dos projetos (académicos, empresariais e de estágio) e dos artigos científicos;</li>
+              <li>Manifestar segurança e espírito independente, mobilizando criticamente saberes e competências adquiridas para escrever mini artigos científicos e submetê-los a revistas com revisão de pares (como por ex: Revista Kriativ-Tech);</li>
+              <li>Apresentar propostas de comunicações e posters a congressos nacionais e internacionais, sobre temáticas relacionadas com o desenvolvimento tecnocientífico sustentável e inteligente que contribuam para uma sociedade mais inclusiva, digital, humanista e capacitante;</li>
+              <li>Discutir ciência em contexto da Sociedade com apresentação de notícias sobre CT&S;</li>
+              <li>Acompanhar os avanços da tecnologia da IA, participar ativa e construtivamente no diálogo público e académico, fazendo uso eficaz das várias ferramentas disponíveis atualmente.</li>
+            </ul>
           </div>
 
           {/* Secção 3 */}
           <div className="log-section">
             <span className="section-tag">03</span>
-            <h2 className="log-heading">Evolução do Pensamento e Compreensão Sistémica</h2>
-            <p className="log-text">
-              Analisando as primeiras etapas desenvolvidas neste percurso, noto uma clara evolução analítica. Inicialmente, o foco incidia na transposição de filosofias científicas para a tecnologia — como a aplicação do falsificacionismo de Popper aos testes de software ou a interpretação de falhas sistémicas através das revoluções científicas de Kuhn. Gradualmente, a minha visão escalou para a resiliência e otimização à escala da Indústria 4.0 e 5.0. Desenvolvi uma preocupação central em mitigar vulnerabilidades e eliminar pontos únicos de falha (<i>Single Points of Failure</i>), integrando conceitos avançados como <i>Big Data</i>, <i>Smart Grids</i> e a indispensável transparência inerente à Inteligência Artificial Explicável (XAI).
-            </p>
+            <h2 className="log-heading">Método de Ensino</h2>
+            <div className="log-text-group">
+              <p className="log-text">
+                Durante esta unidade curricular, foram resolvidas questões de aula disponibilizadas pela docente através da plataforma Moodle. Estas atividades serviram como instrumentos de avaliação formativa e proporcionaram momentos de discussão e aprendizagem, contribuindo para o desenvolvimento do raciocínio crítico e para o aprofundamento dos temas abordados. O material de apoio fornecido pela docente foi essencial para a realização destas tarefas e para incentivar a partilha de conhecimentos e experiências.
+              </p>
+              <p className="log-text">
+                No início de cada aula, procedeu-se também à resolução de questões relacionadas com os temas em estudo da aula anterior, como as grandes etapas do progresso da Humanidade, a definição de ciência, técnica e tecnologia segundo João Caraça, a evolução do conhecimento segundo Karl Popper, Richard Feynman e Thomas Kuhn, a distinção entre ciência e pseudociência, a missão e os eixos de atuação da Agência Nacional para a Cultura Científica e Tecnológica, e ainda aspetos culturais relacionados com Rómulo de Carvalho e o Dia Nacional da Cultura Científica.
+              </p>
+              <p className="log-text">
+                Outro ponto marcante foi a elaboração de um artigo científico em grupo, cujo tema foi "Ciência e Desenvolvimento Tecnológico: As Grandes Etapas do Progresso Técnico segundo Alvin Toffler e Klaus Schwab". Beneficiei do acompanhamento da docente, cujas orientações foram fundamentais para o desenvolvimento do trabalho e a consolidação do conhecimento adquirido. 
+              </p>
+              <p className="log-text">
+                Por fim, destaca-se a prática de apresentar notícias relacionadas com Ciência, Tecnologia e Sociedade (CT&S). Esta atividade promoveu a ligação entre os conceitos teóricos e as suas aplicações práticas, além de permitir acompanhar os avanços mais recentes nestas áreas. No conjunto, estes métodos de ensino criaram um ambiente dinâmico e colaborativo, fortalecendo a autonomia, o espírito crítico e a capacidade de relacionar o conhecimento científico com as questões emergentes da sociedade.
+              </p>
+            </div>
           </div>
 
           {/* Secção 4 */}
           <div className="log-section">
             <span className="section-tag">04</span>
-            <h2 className="log-heading">Perspetivas Futuras e Visão Antropocêntrica</h2>
-            <p className="log-text">
-              A verdadeira conclusão desta unidade curricular reside na consciencialização da responsabilidade profissional. Compreendi que a sociedade e a indústria não exigem apenas a competência técnica prática, mas também a reflexão ética sobre o impacto das soluções desenvolvidas. Como futuro Engenheiro Informático, estabeleço como princípio fundamental que qualquer arquitetura tecnológica deve ser estritamente antropocêntrica. Ao colocar a premissa do ser humano no centro da decisão (<i>Human-in-the-Loop</i>), asseguro que as inovações criadas não são apenas tecnicamente robustas, mas também eticamente alinhadas com a resiliência e a sustentabilidade social. A minha auto-avalação final desta disciplina é de Muito Bom, dado que consegui evoluir o meu pensamento crítico e a capacidade de argumentar os meus pontos de vista de forma clara.
-            </p>
+            <h2 className="log-heading">Reflexão Pessoal</h2>
+            <div className="log-text-group">
+              <p className="log-text">
+                A experiência de aprendizagem nesta unidade curricular foi, sem dúvida, enriquecedora e desafiadora. As atividades desenvolvidas no início de cada aula, como a resolução de questões relacionadas com as matérias anteriormente estudadas, contribuíram significativamente para consolidar o meu conhecimento consecutivamente. Além disso, as questões e investigações adicionais propostas pela docente no Moodle serviram como instrumentos de avaliação formativa e foram fundamentais para o desenvolvimento do raciocínio crítico e da capacidade de síntese e argumentação.
+              </p>
+              <p className="log-text">
+                A elaboração do artigo científico em grupo foi, inegavelmente, um dos pontos altos desta unidade curricular. O tema escolhido, "Ciência e Desenvolvimento Tecnológico: As Grandes Etapas do Progresso Técnico segundo Alvin Toffler e Klaus Schwab", proporcionou-me uma oportunidade única de aprofundar um tema de grande atualidade e relevância. A orientação e acompanhamento da docente foram determinantes para o sucesso deste trabalho, promovendo uma aprendizagem contínua e rigorosa.
+              </p>
+              <p className="log-text">
+                A prática de trazer notícias relacionadas com Ciência, Tecnologia e Sociedade (CT&S) para a sala de aula também teve um impacto muito positivo na minha aprendizagem. Esta atividade permitiu-me estabelecer pontes entre o conhecimento teórico e o contexto real, ampliando a minha perceção sobre a importância e aplicabilidade das temáticas estudadas. Além disso, incentivou a reflexão crítica e a capacidade de relacionar as inovações tecnológicas com os desafios globais.
+              </p>
+              <p className="log-text">
+                De um modo geral, considero que atingi os objetivos de aprendizagem definidos para esta unidade curricular. A abordagem adotada permitiu-me desenvolver competências essenciais, como a autonomia, a resiliência e a colaboração, além de aprofundar o meu espírito crítico e a curiosidade científica. Estou convicto de que as competências adquiridas serão fundamentais para a minha formação académica e para a minha futura atuação profissional, especialmente em contextos que exigem capacidade de adaptação, pensamento crítico e integração de conhecimentos multidisciplinares.
+              </p>
+            </div>
+          </div>
+
+          {/* Secção 5 */}
+          <div className="log-section">
+            <span className="section-tag">05</span>
+            <h2 className="log-heading">Conclusão</h2>
+            <div className="log-text-group">
+              <p className="log-text">
+                Concluí que esta unidade curricular contribuiu de forma decisiva para o meu crescimento pessoal e académico. As diversas atividades e o método de ensino permitiram-me aprimorar significativamente o meu pensamento crítico, ao refletir sobre vários temas e interligar conceitos teóricos com aplicações práticas.
+              </p>
+              <p className="log-text">
+                Além disso, o trabalho colaborativo e o constante feedback ajudaram-me a desenvolver a capacidade de análise e resolução de problemas de forma criativa e autónoma. Este percurso permitiu-me reforçar competências fundamentais como a autonomia, a resiliência e a cooperação, preparando-me para enfrentar desafios futuros tanto nos campos da Engenharia Informática, do desenvolvimento web e móvel, como noutros contextos profissionais e pessoais. 
+              </p>
+              <p className="log-text">
+                Em suma, considero que o meu desempenho foi "Bom", uma vez que alcancei os objetivos propostos de forma sólida e consistente, cumprindo as expectativas. No entanto, reconheço que existe sempre margem para progressão, acreditando que poderia adotar uma abordagem ainda mais proativa em determinados momentos para continuar a fortalecer as minhas capacidades de comunicação e intervenção em contexto académico e profissional.
+              </p>
+            </div>
           </div>
 
         </div>
