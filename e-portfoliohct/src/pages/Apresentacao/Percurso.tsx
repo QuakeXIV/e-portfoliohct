@@ -259,7 +259,7 @@ const Percurso: React.FC = () => {
           </div>
           <div className="step-content">
             <div className="step-card" data-year="23'">
-              <h2 className="course-title">&gt;_ CTeSP Desenvolvimento Mobile</h2>
+              <h2 className="course-title">&gt;_ CTeSP Desenvolvimento para Dispositivos Móveis</h2>
               <div className="institution-name">ISTEC Porto</div>
               <p className="course-desc">
                 Aquisição de competências práticas no desenvolvimento de aplicações nativas e na estruturação de interfaces web e mobile (UX/UI). Construção de bases técnicas sólidas em sistemas operativos, bases de dados e infraestruturas de redes informáticas.
