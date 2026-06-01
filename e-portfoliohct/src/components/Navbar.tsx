@@ -312,6 +312,7 @@ const Navbar: React.FC = () => {
             <span className="mobile-nav-item" style={{ color: '#3b82f6', border: 'none', paddingBottom: 0, marginTop: '12px' }}>./Evidências</span>
             <Link to="/evidencias/artigo" className="mobile-nav-subitem" onClick={closeMenu}>artigo_cientifico.pdf</Link>
             <Link to="/evidencias/cenarios" className="mobile-nav-subitem" onClick={closeMenu}>cenarios_praticos.md</Link>
+            <Link to="/evidencias/noticias" className="mobile-nav-subitem" onClick={closeMenu}>noticias.ts</Link>
 
             <Link to="/porque-portfolio" className="mobile-nav-item" onClick={closeMenu} style={{ marginTop: '12px' }}>./Objetivo</Link>
             <Link to="/relatorio" className="mobile-nav-item" onClick={closeMenu}>./Relatório</Link>

@@ -15,6 +15,7 @@ import Percurso from './pages/Apresentacao/Percurso';
 import Competencias from './pages/Apresentacao/Competencias';
 import Profissional from './pages/Apresentacao/Profissional';
 import ObjetivoPortfolio from './pages/PorquePortfolio';
+import Noticias from './pages/Evidencias/Noticias';
 
 const App: React.FC = () => {
   // A password que vai dar acesso ao site
@@ -147,6 +148,8 @@ const App: React.FC = () => {
             <Route path="/apresentacao/competencias" element={<Competencias />} />
             <Route path="/apresentacao/profissional" element={<Profissional />} />
             <Route path="/porque-portfolio" element={<ObjetivoPortfolio />} />
+            <Route path="/evidencias/noticias" element={<Noticias />} />
+
           </Routes>
         </main>
 
