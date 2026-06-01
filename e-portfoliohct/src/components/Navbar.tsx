@@ -278,6 +278,7 @@ const Navbar: React.FC = () => {
               <div className="dropdown">
                 <Link to="/evidencias/artigo" className="dropdown-link">artigo_cientifico.pdf</Link>
                 <Link to="/evidencias/cenarios" className="dropdown-link">cenarios_praticos.md</Link>
+                <Link to="/evidencias/noticias" className="dropdown-link">noticias.ts</Link>
               </div>
             </div>
 
