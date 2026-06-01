@@ -19,8 +19,8 @@ const Footer: React.FC = () => {
           <p className="footer-info"><strong>Unidade Curricular:</strong> Portfólio Académico e Profissional</p>
           <p className="footer-info"><strong>Ano Letivo:</strong> 2025 / 2026</p>
           <div className="social-icons">
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="social-link">in</a>
-            <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub" className="social-link">gh</a>
+            <a href="https://www.linkedin.com/in/pedro-vale-842004211/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="social-link">in</a>
+            <a href="https://github.com/QuakeXIV" target="_blank" rel="noreferrer" aria-label="GitHub" className="social-link">gh</a>
           </div>
         </div>
 
