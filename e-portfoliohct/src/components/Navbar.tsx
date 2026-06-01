@@ -269,7 +269,7 @@ const Navbar: React.FC = () => {
                 <Link to="/apresentacao/apresentacao" className="dropdown-link">pessoal.ts</Link>
                 <Link to="/apresentacao/percurso" className="dropdown-link">percursoacademico.ts</Link>
                 <Link to="/apresentacao/competencias" className="dropdown-link">competencias.ts</Link>
-                <Link to="/apresentacao/profissional" className="dropdown-link">percursoprofissional.ts</Link>
+                <Link to="/apresentacao/profissional" className="dropdown-link">experienciaprofissional.ts</Link>
               </div>
             </div>
 
