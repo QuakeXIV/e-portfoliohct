@@ -13,63 +13,63 @@ interface ScenarioItem {
 const scenarios: ScenarioItem[] = [
   {
     title: 'Cenário 1 - Autarquia Portuguesa e a implementação de Inteligência Artificial',
-        files: [
-      { label: 'Cenário 1.docx', path: '/evidencias/Cenários/Cenário 1.docx' }
+    files: [
+      { label: 'Cenário 1.docx', path: '/evidencias/cenarios/cenario_1.docx' }
     ]
   },
   {
     title: 'Cenário 2 - Uma exposição interativa intitulada “Da Ciência Antiga à Tecnociência”',
-        files: [
-      { label: 'Cenario2_PedroVale_CarlosSilva_1LEI.docx', path: '/evidencias/Cenários/Cenario2_PedroVale_CarlosSilva_1LEI.docx' }
+    files: [
+      { label: 'Cenario2_PedroVale_CarlosSilva_1LEI.docx', path: '/evidencias/cenarios/cenario_2.docx' }
     ]
   },
   {
     title: 'Cenário 3 - Modernização da Fábrica TecnoMetal através da Indústria 4.0',
-        files: [
-      { label: 'ApendiceA_PedroValeCarlosSilva_Cenario3.docx', path: '/evidencias/Cenários/Cenario3_PedroValeCarlosSilva/ApendiceA_PedroValeCarlosSilva_Cenario3.docx' },
-      { label: 'Cenario3_PedroValeCarlosSilva - Cópia.docx', path: '/evidencias/Cenários/Cenario3_PedroValeCarlosSilva/Cenario3_PedroValeCarlosSilva - Cópia.docx' }
+    files: [
+      { label: 'ApendiceA_PedroValeCarlosSilva_Cenario3.docx', path: '/evidencias/cenarios/cenario_3/apendice_a.docx' },
+      { label: 'Cenario3_PedroValeCarlosSilva - Cópia.docx', path: '/evidencias/cenarios/cenario_3/cenario_3.docx' }
     ]
   },
   {
     title: 'Cenário 4 - O Programa que Quase Nunca Falha',
-        files: [
-      { label: 'ApendiceA_PedroValeCarlosSilva_Cenario3.docx', path: '/evidencias/Cenários/Cenario4_PedroValeCarlosSilva/ApendiceA_PedroValeCarlosSilva_Cenario3.docx' },
-      { label: 'Cenário 4 - Grupo 2.docx', path: '/evidencias/Cenários/Cenario4_PedroValeCarlosSilva/Cenário 4 - Grupo 2.docx' }
+    files: [
+      { label: 'ApendiceA_PedroValeCarlosSilva_Cenario3.docx', path: '/evidencias/cenarios/cenario_4/apendice_a.docx' },
+      { label: 'Cenário 4 - Grupo 2.docx', path: '/evidencias/cenarios/cenario_4/cenario_4.docx' }
     ]
   },
   {
     title: 'Cenário 5 - Serendipidade em Engenharia Informática',
-       files: [
-      { label: 'Apêndice A - Cenário 5 Grupo 6.docx', path: '/evidencias/Cenários/Cenario 5 Grupo 6/Apêndice A - Cenário 5 Grupo 6.docx' },
-      { label: 'Mini Relatório - Cenário 5 Versão 1.docx', path: '/evidencias/Cenários/Cenario 5 Grupo 6/Mini Relatório - Cenário 5 Versão 1.docx' },
-      { label: 'Mini Relatório - Cenário 5 Versão 2.docx', path: '/evidencias/Cenários/Cenario 5 Grupo 6/Mini Relatório - Cenário 5 Versão 2.docx' },
-      { label: 'Mini Relatório - Cenário 5 Versão 3.docx', path: '/evidencias/Cenários/Cenario 5 Grupo 6/Mini Relatório - Cenário 5 Versão 3.docx' }
+    files: [
+      { label: 'Apêndice A - Cenário 5 Grupo 6.docx', path: '/evidencias/cenarios/cenario_5/apendice_a.docx' },
+      { label: 'Mini Relatório - Cenário 5 Versão 1.docx', path: '/evidencias/cenarios/cenario_5/mini_relatorio_v1.docx' },
+      { label: 'Mini Relatório - Cenário 5 Versão 2.docx', path: '/evidencias/cenarios/cenario_5/mini_relatorio_v2.docx' },
+      { label: 'Mini Relatório - Cenário 5 Versão 3.docx', path: '/evidencias/cenarios/cenario_5/mini_relatorio_v3.docx' }
     ]
   },
   {
-    title: 'Cenário 6 - A Transformação da Unidade de Produção "EcoLogística',
-        files: [
-      { label: 'Apêndice A - Cenário 6 Grupo 6.docx', path: '/evidencias/Cenários/Cénario 6 - Grupo 6/Apêndice A - Cenário 6 Grupo 6.docx' },
-      { label: 'Mini Relatório - Grupo 6 - Versão 1.docx', path: '/evidencias/Cenários/Cénario 6 - Grupo 6/Mini Relatório - Grupo 6 - Versão 1.docx' },
-      { label: 'Mini Relatório - Grupo 6 - Versão 2.docx', path: '/evidencias/Cenários/Cénario 6 - Grupo 6/Mini Relatório - Grupo 6 - Versão 2.docx' },
-      { label: 'Mini Relatório - Grupo 6 - Versão 3.docx', path: '/evidencias/Cenários/Cénario 6 - Grupo 6/Mini Relatório - Grupo 6 - Versão 3.docx' }
+    title: 'Cenário 6 - A Transformação da Unidade de Produção "EcoLogística"',
+    files: [
+      { label: 'Apêndice A - Cenário 6 Grupo 6.docx', path: '/evidencias/cenarios/cenario_6/apendice_a.docx' },
+      { label: 'Mini Relatório - Grupo 6 - Versão 1.docx', path: '/evidencias/cenarios/cenario_6/mini_relatorio_v1.docx' },
+      { label: 'Mini Relatório - Grupo 6 - Versão 2.docx', path: '/evidencias/cenarios/cenario_6/mini_relatorio_v2.docx' },
+      { label: 'Mini Relatório - Grupo 6 - Versão 3.docx', path: '/evidencias/cenarios/cenario_6/mini_relatorio_v3.docx' }
     ]
   },
   {
     title: 'Cenário 7 - Moldando o Futuro Digital da Europa / “Empresa de entrega com drones autónomos numa cidade inteligente" / Hospital Inteligente',
-        files: [
-      { label: 'Mini Relatório - Versão 1.docx', path: '/evidencias/Cenários/Cénario 7 - Pedro Vale/Mini Relatório - Versão 1.docx' },
-      { label: 'Mini Relatório - Versão 2.docx', path: '/evidencias/Cenários/Cénario 7 - Pedro Vale/Mini Relatório - Versão 2.docx' },
-      { label: 'Mini Relatório - Versão 3.docx', path: '/evidencias/Cenários/Cénario 7 - Pedro Vale/Mini Relatório - Versão 3.docx' }
+    files: [
+      { label: 'Mini Relatório - Versão 1.docx', path: '/evidencias/cenarios/cenario_7/mini_relatorio_v1.docx' },
+      { label: 'Mini Relatório - Versão 2.docx', path: '/evidencias/cenarios/cenario_7/mini_relatorio_v2.docx' },
+      { label: 'Mini Relatório - Versão 3.docx', path: '/evidencias/cenarios/cenario_7/mini_relatorio_v3.docx' }
     ]
   },
   {
     title: 'Cenário 8 - NetZero 2050 / Redução de emissões da EcoMetal',
-        files: [
-      { label: 'Apêndice A - Cenário 8 Grupo 6.docx', path: '/evidencias/Cenários/Cénario 8 - Grupo 6/Apêndice A - Cenário 8 Grupo 6.docx' },
-      { label: 'Mini-Relatório Parte Prática - Versão 1.docx', path: '/evidencias/Cenários/Cénario 8 - Grupo 6/Mini-Relatório Parte Prática - Versão 1.docx' },
-      { label: 'Mini-Relatório Parte Prática - Versão 2.docx', path: '/evidencias/Cenários/Cénario 8 - Grupo 6/Mini-Relatório Parte Prática - Versão 2.docx' },
-      { label: 'Mini-Relatório Parte Prática - Versão 3.docx', path: '/evidencias/Cenários/Cénario 8 - Grupo 6/Mini-Relatório Parte Prática - Versão 3.docx' }
+    files: [
+      { label: 'Apêndice A - Cenário 8 Grupo 6.docx', path: '/evidencias/cenarios/cenario_8/apendice_a.docx' },
+      { label: 'Mini-Relatório Parte Prática - Versão 1.docx', path: '/evidencias/cenarios/cenario_8/mini_relatorio_v1.docx' },
+      { label: 'Mini-Relatório Parte Prática - Versão 2.docx', path: '/evidencias/cenarios/cenario_8/mini_relatorio_v2.docx' },
+      { label: 'Mini-Relatório Parte Prática - Versão 3.docx', path: '/evidencias/cenarios/cenario_8/mini_relatorio_v3.docx' }
     ]
   }
 ];
@@ -97,7 +97,7 @@ const Cenarios: React.FC = () => {
         }
 
         .prompt-symbol-indigo {
-          color: #6366f1; /* Tom Índigo para representar evidências/artefactos */
+          color: #6366f1;
           margin-right: 10px;
         }
 
@@ -107,7 +107,6 @@ const Cenarios: React.FC = () => {
           gap: 16px;
         }
 
-        /* Estilização do componente details */
         .scenario-item {
           background: var(--surface, #ffffff);
           border: 1px solid var(--border, #e2e8f0);
@@ -126,7 +125,6 @@ const Cenarios: React.FC = () => {
           border-color: #a5b4fc;
         }
 
-        /* Cabeçalho expansível */
         .scenario-summary {
           padding: 18px 24px;
           font-family: '"Fira Code", monospace', sans-serif;
@@ -138,11 +136,10 @@ const Cenarios: React.FC = () => {
           display: flex;
           align-items: center;
           gap: 12px;
-          list-style: none; /* Esconde a seta padrão */
+          list-style: none;
           transition: background 0.2s ease;
         }
 
-        /* Seta customizada para navegadores baseados em Webkit */
         .scenario-summary::-webkit-details-marker {
           display: none;
         }
@@ -163,7 +160,6 @@ const Cenarios: React.FC = () => {
           background: #f8fafc;
         }
 
-        /* Painel Interno Desdobrável */
         .file-panel {
           padding: 24px 32px 32px 32px;
           background: #fafafa;
@@ -173,15 +169,6 @@ const Cenarios: React.FC = () => {
           gap: 20px;
         }
 
-        .scenario-description {
-          font-size: 0.95rem;
-          color: var(--text-p, #64748b);
-          margin: 0;
-          line-height: 1.6;
-          padding-left: 4px;
-          border-left: 3px solid #e2e8f0;
-        }
-
         .files-container {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -189,7 +176,6 @@ const Cenarios: React.FC = () => {
           margin-top: 8px;
         }
 
-        /* Links dos Ficheiros (Estilo Módulo/Commit) */
         .file-link {
           background: var(--surface, #ffffff);
           border: 1px solid var(--border, #e2e8f0);
@@ -240,7 +226,6 @@ const Cenarios: React.FC = () => {
         }
       `}</style>
 
-      {/* Cabeçalho */}
       <div className="scenarios-header">
         <h1><span className="prompt-symbol-indigo">&gt;_</span>git log --tree ./cenarios</h1>
         <p style={{ color: '#64748b', fontSize: '1.1rem', margin: 0 }}>
@@ -248,7 +233,6 @@ const Cenarios: React.FC = () => {
         </p>
       </div>
 
-      {/* Lista de Cenários */}
       <div className="scenarios-list">
         {scenarios.map((scenario) => (
           <details key={scenario.title} className="scenario-item">
@@ -257,8 +241,6 @@ const Cenarios: React.FC = () => {
             </summary>
             
             <div className="file-panel">
-              
-              
               <div className="files-container">
                 {scenario.files.map((file) => (
                   <a
