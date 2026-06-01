@@ -7,6 +7,7 @@ interface NewsItem {
   title: string;
   summary: string;
   tags: string[];
+  sourceUrl: string;
 }
 
 const newsLogs: NewsItem[] = [
@@ -16,7 +17,8 @@ const newsLogs: NewsItem[] = [
     commitHash: "7a2b9f1",
     title: "Novo Pólo de IA para a Sustentabilidade no INESC TEC",
     summary: "O INESC TEC anunciou novos avanços na aplicação de Inteligência Artificial para otimizar as redes energéticas nacionais e prever consumos, marcando um passo vital na transição digital e energética de Portugal.",
-    tags: ["Inteligência Artificial", "Sustentabilidade", "INESC TEC"]
+    tags: ["Inteligência Artificial", "Sustentabilidade", "INESC TEC"],
+    sourceUrl: "https://www.inesctec.pt/pt/noticias"
   },
   {
     week: "Semana 2",
@@ -24,7 +26,8 @@ const newsLogs: NewsItem[] = [
     commitHash: "3c8e4d2",
     title: "Açores como Hub de Advanced Air Mobility (AAM)",
     summary: "Início de parcerias aeronáuticas vitais para testar a implementação de sistemas de mobilidade aérea avançada (drones e eVTOLs autónomos) nos Açores, destinados à monitorização remota e operações de segurança.",
-    tags: ["Aeroespacial", "Drones", "Açores"]
+    tags: ["Aeroespacial", "Drones", "Açores"],
+    sourceUrl: "https://tek.sapo.pt/noticias/computadores"
   },
   {
     week: "Semana 3",
@@ -32,7 +35,8 @@ const newsLogs: NewsItem[] = [
     commitHash: "9f1a7b5",
     title: "Tecnologia IoT na Mitigação de Cheias e Secas",
     summary: "Avanços governamentais na estratégia de gestão hídrica, com a aprovação da barragem de Girabolhos e o estudo de sistemas baseados em sensores IoT para a prevenção e resposta a desastres naturais no centro do país.",
-    tags: ["IoT", "Prevenção", "Gestão Hídrica"]
+    tags: ["IoT", "Prevenção", "Gestão Hídrica"],
+    sourceUrl: "https://www.publico.pt/tecnologia"
   },
   {
     week: "Semana 4",
@@ -40,7 +44,8 @@ const newsLogs: NewsItem[] = [
     commitHash: "5d2c8e4",
     title: "IPMA Integra Machine Learning na Previsão Meteorológica",
     summary: "O Instituto Português do Mar e da Atmosfera reforçou os seus processos analíticos com modelos preditivos baseados em Machine Learning, visando alertar atempadamente a população sobre fenómenos climáticos extremos.",
-    tags: ["Machine Learning", "Meteorologia", "IPMA"]
+    tags: ["Machine Learning", "Meteorologia", "IPMA"],
+    sourceUrl: "https://www.ipma.pt/pt/media/noticias/"
   },
   {
     week: "Semana 5",
@@ -48,7 +53,8 @@ const newsLogs: NewsItem[] = [
     commitHash: "1b9f7a3",
     title: "Inovação Médica: Deteção de Biomarcadores com LLMs",
     summary: "Investigadores apresentaram novas provas de conceito para a deteção precoce de patologias oncológicas recorrendo a Modelos de Linguagem de Grande Escala (LLMs) aplicados à análise de milhares de registos clínicos.",
-    tags: ["HealthTech", "LLMs", "Investigação"]
+    tags: ["HealthTech", "LLMs", "Investigação"],
+    sourceUrl: "https://visao.pt/exameinformatica/"
   },
   {
     week: "Semana 6",
@@ -56,7 +62,8 @@ const newsLogs: NewsItem[] = [
     commitHash: "8e4d2c9",
     title: "Estratégia Nacional de Energia Oceânica e Eólica",
     summary: "Publicação de novos dados técnicos que confirmam o enorme potencial do Atlântico português para a expansão de turbinas eólicas offshore de nova geração e eletrificação verde da economia.",
-    tags: ["Energias Renováveis", "Offshore", "Transição Verde"]
+    tags: ["Energias Renováveis", "Offshore", "Transição Verde"],
+    sourceUrl: "https://eco.sapo.pt/"
   },
   {
     week: "Semana 7",
@@ -64,7 +71,8 @@ const newsLogs: NewsItem[] = [
     commitHash: "2c9f1a7",
     title: "Robótica Submarina Portuguesa em Destaque no Sado",
     summary: "Engenheiros e biólogos portugueses testaram com sucesso sistemas de drones submarinos autónomos (AUV) para mapear a biodiversidade marinha na zona da Arrábida de forma totalmente não intrusiva.",
-    tags: ["Robótica", "AUV", "Oceanografia"]
+    tags: ["Robótica", "AUV", "Oceanografia"],
+    sourceUrl: "https://www.rtp.pt/noticias/ciencia"
   },
   {
     week: "Semana 8",
@@ -72,7 +80,8 @@ const newsLogs: NewsItem[] = [
     commitHash: "e4f5g6h",
     title: "Inauguração do Star Institute em Viseu",
     summary: "O Primeiro-Ministro inaugurou oficialmente o Star Institute, reforçando que a aproximação entre as empresas e as instituições de ensino tecnológico é o verdadeiro motor de desenvolvimento e fixação de talento em Portugal.",
-    tags: ["Educação Tecnológica", "Indústria", "Políticas Públicas"]
+    tags: ["Educação Tecnológica", "Indústria", "Políticas Públicas"],
+    sourceUrl: "https://www.jornaldenegocios.pt/empresas/tecnologias"
   }
 ];
 
@@ -222,11 +231,22 @@ const Noticias: React.FC = () => {
           color: var(--text-p, #475569);
           line-height: 1.7;
           font-size: 1rem;
-          margin: 0 0 20px 0;
+          margin: 0;
           text-align: justify;
         }
 
-        /* Tags */
+        /* Rodapé do Cartão: Tags + Link da Fonte */
+        .news-footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 16px;
+          margin-top: 24px;
+          padding-top: 16px;
+          border-top: 1px dashed #e2e8f0;
+        }
+
         .news-tags {
           display: flex;
           flex-wrap: wrap;
@@ -242,6 +262,27 @@ const Noticias: React.FC = () => {
           font-size: 0.75rem;
           font-weight: 700;
           font-family: '"Fira Code", monospace', sans-serif;
+        }
+
+        .news-link {
+          font-family: '"Fira Code", monospace', sans-serif;
+          font-size: 0.85rem;
+          color: #3b82f6;
+          text-decoration: none;
+          font-weight: 700;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          transition: color 0.2s ease, transform 0.2s ease;
+          background: rgba(59, 130, 246, 0.1);
+          padding: 6px 12px;
+          border-radius: 6px;
+        }
+
+        .news-link:hover {
+          color: #ffffff;
+          background: #3b82f6;
+          transform: translateX(4px);
         }
 
         /* Responsivo */
@@ -260,6 +301,10 @@ const Noticias: React.FC = () => {
           }
           .timeline-item:hover .news-card {
             transform: translateY(-4px);
+          }
+          .news-footer {
+            flex-direction: column;
+            align-items: flex-start;
           }
         }
       `}</style>
@@ -291,10 +336,16 @@ const Noticias: React.FC = () => {
               <h2 className="news-title">{log.title}</h2>
               <p className="news-summary">{log.summary}</p>
               
-              <div className="news-tags">
-                {log.tags.map(tag => (
-                  <span key={tag} className="tag-badge">#{tag.toLowerCase().replace(/\s+/g, '_')}</span>
-                ))}
+              <div className="news-footer">
+                <div className="news-tags">
+                  {log.tags.map(tag => (
+                    <span key={tag} className="tag-badge">#{tag.toLowerCase().replace(/\s+/g, '_')}</span>
+                  ))}
+                </div>
+                
+                <a href={log.sourceUrl} target="_blank" rel="noreferrer" className="news-link">
+                  [ Ler Fonte ] <span>→</span>
+                </a>
               </div>
 
             </article>
