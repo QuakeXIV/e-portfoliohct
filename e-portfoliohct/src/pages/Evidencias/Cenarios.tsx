@@ -12,33 +12,33 @@ interface ScenarioItem {
 
 const scenarios: ScenarioItem[] = [
   {
-    title: 'Cenário 1',
+    title: 'Cenário 1 - Autarquia Portuguesa e a implementação de Inteligência Artificial',
         files: [
       { label: 'Cenário 1.docx', path: '/evidencias/Cenários/Cenário 1.docx' }
     ]
   },
   {
-    title: 'Cenário 2',
+    title: 'Cenário 2 - Uma exposição interativa intitulada “Da Ciência Antiga à Tecnociência”',
         files: [
       { label: 'Cenario2_PedroVale_CarlosSilva_1LEI.docx', path: '/evidencias/Cenários/Cenario2_PedroVale_CarlosSilva_1LEI.docx' }
     ]
   },
   {
-    title: 'Cenário 3',
+    title: 'Cenário 3 - Modernização da Fábrica TecnoMetal através da Indústria 4.0',
         files: [
       { label: 'ApendiceA_PedroValeCarlosSilva_Cenario3.docx', path: '/evidencias/Cenários/Cenario3_PedroValeCarlosSilva/ApendiceA_PedroValeCarlosSilva_Cenario3.docx' },
       { label: 'Cenario3_PedroValeCarlosSilva - Cópia.docx', path: '/evidencias/Cenários/Cenario3_PedroValeCarlosSilva/Cenario3_PedroValeCarlosSilva - Cópia.docx' }
     ]
   },
   {
-    title: 'Cenário 4',
+    title: 'Cenário 4 - O Programa que Quase Nunca Falha',
         files: [
       { label: 'ApendiceA_PedroValeCarlosSilva_Cenario3.docx', path: '/evidencias/Cenários/Cenario4_PedroValeCarlosSilva/ApendiceA_PedroValeCarlosSilva_Cenario3.docx' },
       { label: 'Cenário 4 - Grupo 2.docx', path: '/evidencias/Cenários/Cenario4_PedroValeCarlosSilva/Cenário 4 - Grupo 2.docx' }
     ]
   },
   {
-    title: 'Cenário 5',
+    title: 'Cenário 5 - Serendipidade em Engenharia Informática',
        files: [
       { label: 'Apêndice A - Cenário 5 Grupo 6.docx', path: '/evidencias/Cenários/Cenario 5 Grupo 6/Apêndice A - Cenário 5 Grupo 6.docx' },
       { label: 'Mini Relatório - Cenário 5 Versão 1.docx', path: '/evidencias/Cenários/Cenario 5 Grupo 6/Mini Relatório - Cenário 5 Versão 1.docx' },
@@ -47,7 +47,7 @@ const scenarios: ScenarioItem[] = [
     ]
   },
   {
-    title: 'Cenário 6',
+    title: 'Cenário 6 - A Transformação da Unidade de Produção "EcoLogística',
         files: [
       { label: 'Apêndice A - Cenário 6 Grupo 6.docx', path: '/evidencias/Cenários/Cénario 6 - Grupo 6/Apêndice A - Cenário 6 Grupo 6.docx' },
       { label: 'Mini Relatório - Grupo 6 - Versão 1.docx', path: '/evidencias/Cenários/Cénario 6 - Grupo 6/Mini Relatório - Grupo 6 - Versão 1.docx' },
@@ -56,7 +56,7 @@ const scenarios: ScenarioItem[] = [
     ]
   },
   {
-    title: 'Cenário 7',
+    title: 'Cenário 7 - Moldando o Futuro Digital da Europa / “Empresa de entrega com drones autónomos numa cidade inteligente" / Hospital Inteligente',
         files: [
       { label: 'Mini Relatório - Versão 1.docx', path: '/evidencias/Cenários/Cénario 7 - Pedro Vale/Mini Relatório - Versão 1.docx' },
       { label: 'Mini Relatório - Versão 2.docx', path: '/evidencias/Cenários/Cénario 7 - Pedro Vale/Mini Relatório - Versão 2.docx' },
@@ -64,7 +64,7 @@ const scenarios: ScenarioItem[] = [
     ]
   },
   {
-    title: 'Cenário 8',
+    title: 'Cenário 8 - NetZero 2050 / Redução de emissões da EcoMetal',
         files: [
       { label: 'Apêndice A - Cenário 8 Grupo 6.docx', path: '/evidencias/Cenários/Cénario 8 - Grupo 6/Apêndice A - Cenário 8 Grupo 6.docx' },
       { label: 'Mini-Relatório Parte Prática - Versão 1.docx', path: '/evidencias/Cenários/Cénario 8 - Grupo 6/Mini-Relatório Parte Prática - Versão 1.docx' },
