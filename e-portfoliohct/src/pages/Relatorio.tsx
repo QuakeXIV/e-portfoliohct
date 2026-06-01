@@ -136,7 +136,7 @@ const Relatorio: React.FC = () => {
 
       {/* Cabeçalho */}
       <div className="report-header">
-        <h1><span className="prompt-symbol-amber">&gt;_</span>tail -f relatorio_reflexivo.log</h1>
+        <h1><span className="prompt-symbol-amber">&gt;_</span>Relatório Reflexivo</h1>
         <p style={{ color: '#64748b', fontSize: '1.1rem', margin: 0 }}>
           Autoavaliação e síntese crítica do percurso na Unidade Curricular.
         </p>
@@ -156,36 +156,36 @@ const Relatorio: React.FC = () => {
           {/* Secção 1 */}
           <div className="log-section">
             <span className="section-tag">01</span>
-            <h2 className="log-heading">Init_Context() : Fundações e Metodologia</h2>
+            <h2 className="log-heading">Introdução e Metodologia</h2>
             <p className="log-text">
-              Este <i>log</i> documenta a minha evolução ao longo da unidade curricular de História da Ciência e das Técnicas (1º ano de Engenharia Informática). Longe de ser um simples arquivo de <i>outputs</i> académicos, este portfólio atua como um mecanismo de metacognição. Cada cenário aqui analisado resultou de um processo iterativo profundo: desde a pesquisa teórica e debate entre pares, até à validação estruturada com ferramentas de Inteligência Artificial Generativa (IAG), consolidando o meu pensamento crítico e capacidade argumentativa.
+              Este documento reflete a minha evolução ao longo da unidade curricular de História da Ciência e das Técnicas (1º ano de Engenharia Informática). Longe de ser um simples arquivo de trabalhos académicos, este portfólio atua como um instrumento de metacognição. Cada cenário aqui analisado resultou de um processo iterativo e aprofundado: desde a pesquisa teórica e o debate entre pares, até à validação estruturada com ferramentas de Inteligência Artificial Generativa (IAG), consolidando o meu pensamento crítico e a minha capacidade argumentativa.
             </p>
           </div>
 
           {/* Secção 2 */}
           <div className="log-section">
             <span className="section-tag">02</span>
-            <h2 className="log-heading">Debug_Mode() : Navegando na Complexidade</h2>
+            <h2 className="log-heading">Desafios e Contexto Regulatório</h2>
             <p className="log-text">
-              A transição de modelos teóricos para arquiteturas de *software* levanta *warnings* complexos. Desenhar infraestruturas para *Smart Cities* ou Hospitais Inteligentes obrigou-me a balancear a inovação tecnológica com barreiras legais rigorosas, nomeadamente o RGPD e o *AI Act*. Para contornar a latência em operações industriais críticas e modernizar sistemas legados, mergulhei no potencial do *Edge Computing* e dos *Digital Twins*. Foi um teste exigente à minha capacidade de filtrar o 'ruído' informático, cultivando uma "mente preparada" para identificar soluções de alto impacto num mar de inovações emergentes.
+              A transição de modelos teóricos para arquiteturas de sistemas levanta desafios complexos. Desenhar infraestruturas para Cidades Inteligentes (<i>Smart Cities</i>) ou Hospitais Inteligentes obrigou-me a ponderar o equilíbrio entre a inovação tecnológica e o cumprimento de normativas legais rigorosas, nomeadamente o RGPD e o <i>AI Act</i>. Para compreender a otimização de latência em operações industriais críticas e a modernização de sistemas legados, analisei o potencial do <i>Edge Computing</i> e dos <i>Digital Twins</i>. Este percurso exigiu uma elevada capacidade de filtragem de informação, cultivando uma "mente preparada" para identificar soluções de alto impacto face à rápida emergência de novas tecnologias.
             </p>
           </div>
 
           {/* Secção 3 */}
           <div className="log-section">
             <span className="section-tag">03</span>
-            <h2 className="log-heading">System_Update() : Evolução Sistémica</h2>
+            <h2 className="log-heading">Evolução do Pensamento e Compreensão Sistémica</h2>
             <p className="log-text">
-              Analisando os meus primeiros <i>commits</i> neste percurso, noto uma clara mudança de paradigma. Inicialmente, o foco estava em transpor filosofias científicas para a tecnologia — como aplicar o falsificacionismo de Popper ao *Software Testing* ou interpretar falhas críticas de sistema através das revoluções de Kuhn. Gradualmente, a minha visão escalou para a resiliência e otimização à escala da Indústria 4.0/5.0. Desenvolvi uma preocupação obsessiva em mitigar vulnerabilidades como *Ransomware* e eliminar *Single Points of Failure*, integrando conceitos avançados como *Big Data*, *Smart Grids* e a indispensável transparência da *Explainable AI* (XAI) nas tomadas de decisão de IA.
+              Analisando as primeiras etapas desenvolvidas neste percurso, noto uma clara evolução analítica. Inicialmente, o foco incidia na transposição de filosofias científicas para a tecnologia — como a aplicação do falsificacionismo de Popper aos testes de software ou a interpretação de falhas sistémicas através das revoluções científicas de Kuhn. Gradualmente, a minha visão escalou para a resiliência e otimização à escala da Indústria 4.0 e 5.0. Desenvolvi uma preocupação central em mitigar vulnerabilidades e eliminar pontos únicos de falha (<i>Single Points of Failure</i>), integrando conceitos avançados como <i>Big Data</i>, <i>Smart Grids</i> e a indispensável transparência inerente à Inteligência Artificial Explicável (XAI).
             </p>
           </div>
 
           {/* Secção 4 */}
           <div className="log-section">
             <span className="section-tag">04</span>
-            <h2 className="log-heading">Future_Builds() : Visão Antropocêntrica</h2>
+            <h2 className="log-heading">Perspetivas Futuras e Visão Antropocêntrica</h2>
             <p className="log-text">
-              O verdadeiro *build* final desta unidade curricular não é código, mas sim responsabilidade. Compreendi que o mercado já não valoriza apenas o *know-how* técnico, mas exige urgentemente o *know-why* — a razão e o impacto daquilo que desenvolvemos. Como futuro Engenheiro de Software, retenho como princípio fundamental que qualquer arquitetura tecnológica tem de ser antropocêntrica. Ao colocar a premissa do *Human-in-the-Loop* no centro do design, garanto que as soluções criadas não são apenas à prova de falhas, mas eticamente alinhadas com a resiliência e sustentabilidade da sociedade.
+              A verdadeira conclusão desta unidade curricular reside na consciencialização da responsabilidade profissional. Compreendi que a sociedade e a indústria não exigem apenas a competência técnica prática, mas também a reflexão ética sobre o impacto das soluções desenvolvidas. Como futuro Engenheiro Informático, estabeleço como princípio fundamental que qualquer arquitetura tecnológica deve ser estritamente antropocêntrica. Ao colocar a premissa do ser humano no centro da decisão (<i>Human-in-the-Loop</i>), asseguro que as inovações criadas não são apenas tecnicamente robustas, mas também eticamente alinhadas com a resiliência e a sustentabilidade social.
             </p>
           </div>
 
